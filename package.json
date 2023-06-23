@@ -1,0 +1,26 @@
+{
+  "name": "csvanalyzer",
+  "version": "1.0.0",
+  "description": "CSV DATA --> Load --> Parse --> Analyze --> Report",
+  "main": "index.js",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanff97/csvAnalizer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alanff97/csvAnalizer/issues"
+  },
+  "homepage": "https://github.com/alanff97/csvAnalizer#readme",
+  "dependencies": {
+    "concurrently": "^8.2.0",
+    "nodemon": "^2.0.22"
+  }
+}
