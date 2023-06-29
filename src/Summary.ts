@@ -12,3 +12,5 @@ export class Summary{
     constructor(public analyzer: Analyzer, public outTarger: OutputTarget){
 
     }}
+
+    
