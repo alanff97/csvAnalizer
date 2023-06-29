@@ -12,10 +12,16 @@ const csvFileReader = new CsvFileReader('football.csv');
 const matchReader = new MatchReader(csvFileReader);
 matchReader.load();
 //matchReader.matches
-const summary = new Summary(
+
+/* const summary = new Summary(
   new WinsAnalysis('Man United'),
   new HtmlReport()
   // new ConsoleReport()
 );
+ */
+
+// Implementing static method in summary class
+
+const summary = Summary.winsReportStatic('Man United');
 
 summary.buildAndPrintReport(matchReader.matches);
